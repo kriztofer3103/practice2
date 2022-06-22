@@ -1,6 +1,6 @@
 import Utiles from "./Components/UtilesEscolares";
 import "./App.css";
-import Data from "./JSON/Data.json";
+import Data from "./Json/Data.json";
 
 function App() {
   return (
