@@ -1,0 +1,30 @@
+[
+  {
+    "id": "1",
+    "cuaderno": "cuaderno1-azul",
+    "lapiz": "lapiz1-verde",
+    "mochila": "mochila1-grande",
+    "tempera": "tempera1-pequeña"
+  },
+  {
+    "id": "2",
+    "cuaderno": "cuaderno2-naranja",
+    "lapiz": "lapiz2-rojo",
+    "mochila": "mochila2-grande",
+    "tempera": "tempera2-pequeña"
+  },
+  {
+    "id": "3",
+    "cuaderno": "cuaderno3-azul",
+    "lapiz": "lapiz3-verde",
+    "mochila": "mochila3-grande",
+    "tempera": "tempera3-pequeña"
+  },
+  {
+    "id": "4",
+    "cuaderno": "cuaderno4-azul",
+    "lapiz": "lapiz4-verde",
+    "mochila": "mochila4-grande",
+    "tempera": "tempera4-pequeña"
+  }
+]
