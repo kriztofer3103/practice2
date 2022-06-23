@@ -1,6 +1,9 @@
 import Utiles from "./Components/UtilesEscolares";
 import "./App.css";
 import Data from "./Json/Data.json";
+import { Table } from "reactstrap";
+
+import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
   return (
@@ -11,30 +14,31 @@ function App() {
         </div>{" "}
         <br />
         <div className="lista-utiles">
-          <h2 className="subtitle">--LISTA DE UTILES ESCOLARES--</h2>
-          <table>
-            <tbody>
+          <h2 className="subtitle">LISTA DE UTILES ESCOLARES</h2>
+          <br />
+          <Table dark bordered>
+            <thead>
               <tr>
-                <td>ID{"-->"}</td>
-                <td>CUADERNOS{"-------->"}</td>
-                <td>LAPIZ{"-------->"}</td>
-                <td>MOCHILA{"-------->"}</td>
-                <td>TEMPERA</td>
+                <th>ID</th>
+                <th>CUADERNO</th>
+                <th>LAPIZ</th>
+                <th>MOCHILA</th>
+                <th>TEMPERA</th>
               </tr>
-            </tbody>
-          </table>
-          {Data.map((utiles) => {
-            return (
-              <Utiles
-                key={utiles.id}
-                id={utiles.id}
-                cuaderno={utiles.cuaderno}
-                lapiz={utiles.lapiz}
-                mochila={utiles.mochila}
-                tempera={utiles.tempera}
-              ></Utiles>
-            );
-          })}
+            </thead>
+            {Data.map((utiles) => {
+              return (
+                <Utiles
+                  key={utiles.id}
+                  id={utiles.id}
+                  cuaderno={utiles.cuaderno}
+                  lapiz={utiles.lapiz}
+                  mochila={utiles.mochila}
+                  tempera={utiles.tempera}
+                ></Utiles>
+              );
+            })}
+          </Table>
         </div>
       </header>
     </div>
